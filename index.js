@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const vendasHoje = [
-    { id: 1, produto: "Produto 1", valor: 25.5 },
-    { id: 2, produto: "Produto 2", valor: 10.0 },
-    { id: 3, produto: "Produto 3", valor: 45.75 },
+    { id: 1, produto: "Produto 1", entrada: "data", saida: "data", valor: 25.5 },
+    { id: 2, produto: "Produto 2", entrada: "data", saida: "data", valor: 10.0 },
+    { id: 3, produto: "Produto 3", entrada: "data", saida: "data", valor: 45.75 },
   ];
 
   const pedidosPendentes = [
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { id: 2, cliente: "João" },
   ];
 
-  const movimentacoes = [
+  const prazo_de_validade = [
     { id: 1, tipo: "Entrada", produto: "Produto 4" },
     { id: 2, tipo: "Saída", produto: "Produto 2" },
     { id: 3, tipo: "Entrada", produto: "Produto 5" },
@@ -42,8 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Atualiza o card que mostra o total de produtos cadastrados
   function atualizarCardTotalProdutos() {
     document.querySelector("#info_total_produtos").textContent = // seleção do id do botão
-      `${produtos.length} Produtos`; // exibe a quantidade de produtos cadastrados -> dentro da crase, colocar a variável 
-                                                                                       // e pois a concatenação do texto.
+      `${produtos.length} Produtos`; 
+      // exibe a quantidade de produtos cadastrados -> dentro da crase, colocar a variável 
+      // e pois a concatenação do texto.
   }
 
   // Atualiza o card de vendas de hoje (somando o valor de todas as vendas)
@@ -67,10 +68,10 @@ document.addEventListener("DOMContentLoaded", function () {
       `${pedidosPendentes.length} Pendentes`;
   }
 
-  // Atualiza o card de movimentações de estoque
-  function atualizarCardMovimentacoes() {
-    document.querySelector("#info_movimentacoes").textContent =
-      `${movimentacoes.length} Entradas/Saídas`;
+  // Atualiza o card de prazo de validade
+  function atualizarCardPrazoDeValidade() {
+    document.querySelector("#info_prazo_de_validade").textContent =
+      ` ${prazo_de_validade.length} dias para vencer ${produtos.length} produtos.`;
   }
 
   // Atualiza o card de alertas de estoque baixo (<= 5 unidades)
@@ -86,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
   atualizarCardVendasHoje();
   atualizarCardFornecedores();
   atualizarCardPedidosPendentes();
-  atualizarCardMovimentacoes();
+  atualizarCardPrazoDeValidade();
   atualizarCardAlertasEstoque();
 });
 
