@@ -1,0 +1,73 @@
+#logo {
+    display: flex;
+    width: 15vw;
+}
+
+#header, #header-placeholder {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-bottom: 2%;
+    color: #1a1717;
+    background-color: #1789e536;
+    border-radius: 0.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font: normal bolder 1.5em Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    margin-left: 5%;
+    text-shadow: 1px 1px 2px #00000080;
+}
+
+.container_menu {
+    display: flex;
+    justify-content: flex-end;
+    color: #ffffff
+}
+
+.item_menu {
+    list-style: none;
+    font: normal normal 0.8em arial;
+    padding: 1%;
+    border-style: none;
+    border-radius: 0.5em;
+    margin-left: 3vw;
+}
+
+.item_menu:hover {
+    background-color: #4e788a;
+    color: blanchedalmond;
+    transform: scale(1.1);
+    margin-left: 3vw;
+    height: 2vh;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    list-style: none;
+    transition: all 0.3s ease;
+}
+
+select {
+    text-decoration: none;
+    border: none;
+    background-color: #f0ffff00;
+    width: 8vw;
+}
+
+select:hover {
+    background-color: #4e788a;
+}
+
+option {
+    border: none;
+}

@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 2% auto;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+    }
+
+    .container_menu {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_menu li {
+        padding: 3%;
+        font: normal normal 1.2em arial;
+    }
+
+    .botao__dashboard {
+        width:auto;
+        height: 20vh;
+        margin: 4%;
+        font: normal normal 1.2em Arial, sans-serif;
+    }
+}

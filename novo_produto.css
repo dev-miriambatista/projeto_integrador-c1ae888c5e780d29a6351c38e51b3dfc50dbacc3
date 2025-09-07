@@ -1,0 +1,49 @@
+body {
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+form{
+    display: flex;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5em;
+    background-color: #ffffff;
+    flex-direction: column;
+    width: 80%;
+}
+
+/*input e select está no style.css. linhas 148 e 155 */
+imput {
+    text-decoration: none;
+    border: none;
+    background-color: rgba(240, 255, 255, 0);
+    width: 70%;
+    
+}
+input:hover {
+    background-color: #4e788a;
+    transition: 0.7s ease;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    width: 70%;
+}
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1rem;
+}

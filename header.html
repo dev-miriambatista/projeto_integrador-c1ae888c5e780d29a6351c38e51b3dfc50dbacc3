@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="novo_produto.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js" defer></script>
+</head>
+
+<header>
+    <img id="logo" src="image/logotipo.png" alt="logo_capEstoque">
+
+    <ul class="container_menu"></ul>
+
+        <li class="item_menu"><a href="index.html">DASHBOARD</a></li>
+
+        <li class="item_menu">
+            <label for="RELATORIO"></label>
+            <select name="relatorio" id="RELATORIO" title="Selecione o tipo de relatório"
+                onchange="if(this.value) window.location.href=this.value;">
+                <option value="">RELATÓRIO</option>
+                <option value="produtos.html">PRODUTOS</option>
+                <option value="precos.html">PREÇOS</option>
+                <option value="categorias.html">CATEGORIAS</option>
+                <option value="fornecedores.html">FORNECEDORES</option>
+                <option value="estoque_minimo.html">ESTOQUE MÍNIMO</option>
+                <option value="cod_prod.html">COD PROD</option>
+                <option value="lucro.html">LUCRO</option>
+                <option value="mais_vendidos.html">+ VENDIDOS</option>
+            </select>
+        </li>
+
+        <li class="item_menu"><a href="novo_produto.html">NOVO PRODUTO</a></li>
+        <li class="item_menu"><a href="fornecedor.html">FORNECEDORES</a></li>
+    </ul>
+
+</header>

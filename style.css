@@ -1,0 +1,213 @@
+:root {
+    font-family: Arial;
+}
+
+header {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    /* Stack children vertically */
+    align-items: center;
+    text-align: center;
+    margin: 2% auto 1% auto;
+    margin-bottom: 0;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 0.7em;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 5px 1px 5px #9b9da1;
+    text-shadow: 1px 1px 2px #00000080;
+}
+
+.container_dashboard {
+    display: flex;
+    width: 80%;
+    height: 55vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 5vw;
+}
+
+.container_dashboard ul {
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 2%;
+}
+
+.item_dashboard {
+    list-style: none;
+    width: 27%;
+    height: 15%;
+}
+
+.botao__dashboard {
+    display: flex;
+    font: normal normal 0.8em Arial, sans-serif;
+    color: #1a1717;
+    width: 20vw;
+    height: 25vh;
+    border-radius: 0.7em;
+    border-style: none;
+    list-style: none;
+    margin: 3%;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    box-shadow: 1px 5px 20px #9b9d;
+    text-shadow: 1px 1px 2px #00000080;
+}
+
+#btn_total_produtos {
+    background-image: linear-gradient(to top, #baf87d, #b1f7c0);
+    list-style: none;
+}
+
+#btn_vendas_hoje {
+    background-image: linear-gradient(to top, #50d3ff, #afdff3);
+}
+
+#btn_fornecedores {
+    background-image: linear-gradient(to top, #fa57c4, #f1abd2);
+}
+
+#btn_pedidos_pendentes {
+    background-image: linear-gradient(to top, #ffb347, #e7cc79);
+}
+
+#btn_movimentacoes {
+    background-image: linear-gradient(to top, #a657ff, #daa0f3);
+}
+
+#btn_alerta_estoque {
+    background-image: linear-gradient(to top, #ff4848, #f3b19d);
+}
+
+
+.card_item_dashboard {
+    font: normal bolder 2em Outfit, sans-serif;
+    width: 20vw;
+    height: 22vh;
+    text-shadow: 1px 1px 8px #31303080;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.bi {
+    padding: 3%;
+    font-size: 3em;
+    border-radius: 0.2em;
+    height: 50%;
+    width: 50%;
+    text-shadow: 1px 8px 8px #000000bd;
+}
+
+
+
+@media (max-width: 600px) {
+    body {
+        width: 100vw;
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        width: 80%;
+        flex-direction: row;
+        /* Stack children vertically */
+        align-items: center;
+        text-align: center;
+        margin: 2% auto 1% auto;
+        margin-bottom: 0;
+    }
+
+
+    #logo {
+        width: 25vw;
+        margin-bottom: 3%;
+    }
+
+    .container_menu {
+        width: 80%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .item_menu {
+        font: normal normal 1em arial;
+        padding: 3%;
+        margin: 1%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: auto;
+        padding: 0%;
+    }
+
+    .container_dashboard {
+        display: flex;
+        width: 80%;
+        height: auto;
+        padding: 0;
+        margin: 2%;
+        justify-content: flex-start;
+    }
+
+    .container_dashboard ul {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .item_dashboard {
+        width: 30%;
+        height: auto;
+        margin: 4%;
+    }
+
+    .botao__dashboard {
+        display: flex;
+        width: 27vw;
+        height: 20vh;
+        margin: 5px;
+        padding: 0;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1.1em;
+        align-content: center;
+        align-items: center;
+    }
+
+    .card_item_dashboard {
+        font: normal bolder 1em Outfit, sans-serif;
+        justify-content: center;
+    }
+
+    .bi {
+        font-size: 3em;
+        padding: 0;
+    }
+
+}

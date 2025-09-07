@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="fornecedor.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js" defer></script>
+
+    <title>capEstoque</title>
+</head>
+<body>
+    <div id="header"></i></div>
+    <main>
+        <div id="container_fornecedores">
+
+            <h1>Lista de Fornecedores<a href="adicionar_fornecedor.html"><i class="bi bi-person-add"></i></a></h1>
+            </div>
+            <ul id="fornecedores-list" class="lista-estilizada">
+            </ul>
+          
+        </div>
+    </main>
+
+    <script>
+        fetch("header.html")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Erro ao carregar o header: " + response.status);
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+                console.log("Header carregado com sucesso!");
+            })
+            .catch(error => {
+                console.error("Erro no fetch:", error);
+            });
+
+    </script>
+
+    <script src="index.js"></script>
+    <script src="fornecedor.js"></script>
+
+    <footer>
+        <p>Criado por capEstoque</p>
+    </footer>
+
+</body>
+
+</html>
