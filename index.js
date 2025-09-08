@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const lista = document.querySelector("#lista_produtos");
 
 // Percorre cada produto do array e cria um <li> para exibir na tela
-produtos.forEach(produto => {
+produto.forEach(produto => {
   // Cria um item de lista <li>
   const item = document.createElement("li");
 

@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const ul = document.querySelector("#pendencias");
 
     const pendencias = [
-        { prazo_de_entrega: "23/09/2025", fornecedor: "Campo Verde", produto: "Canela" },
+        { prazo_de_entrega: "23/09/2025", fornecedor: "Campo Verde", produto: "Canela", nota_fiscal: },
         { prazo_de_entrega: "30/09/2025", fornecedor: "Campo Verde", produto: "Milho" }
     ];
 
