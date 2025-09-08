@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produtos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="relatorio.js" defer></script>
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <h1>Relatório de Produtos</h1><div class="filtros">
+            <select id="filtro_fornecedor" aria-label="Filtrar por fornecedor">
+                <option value="">Fornecedor</option>
+                <option value="Empório Verde">Empório Verde</option>
+                <option value="Empório Natural">Empório Natural</option>
+            </select>
+        
+            <select id="filtro_categoria" aria-label="Filtrar por categoria">
+                <option value="">Categoria</option>
+                <option value="Chás">Chás</option>
+                <option value="Grãos">Grãos</option>
+                <option value="Oleaginosas">Oleaginosas</option>
+                <option value="Superalimentos">Superalimentos</option>
+                <option value="Óleos">Óleos</option>
+            </select>
+        
+            <input type="date" id="filtro_data_entrada" aria-label="Filtrar por data de entrada">
+            <input type="date" id="filtro_data_saida" aria-label="Filtrar por data de saída">
+            <input type="date" id="filtro_validade" aria-label="Filtrar por validade">
+
+            
+        
+            <button id="btn_resetar" aria-label="Limpar filtros">❌</button>
+        </div>
+        
+        <ul id="lista_produtos"></ul>
+
+<ul id="lista_produtos"></ul>
+
+    </main>
+    <script>
+        fetch("header.html")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Erro ao carregar o header: " + response.status);
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+                console.log("Header carregado com sucesso!");
+            })
+            .catch(error => {
+                console.error("Erro no fetch:", error);
+            });
+    </script>
+</body>
+</html>

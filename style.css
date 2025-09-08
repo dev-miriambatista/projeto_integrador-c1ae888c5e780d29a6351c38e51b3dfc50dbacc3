@@ -122,6 +122,12 @@ main {
     text-shadow: 1px 8px 8px #000000bd;
 }
 
+.filtros{
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 
 @media (max-width: 600px) {
